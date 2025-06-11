@@ -32,19 +32,19 @@ A collaborative Principal Component Analysis (PCA) implementation to analyze mal
 
 **Lead**: Stecie Niyonzima
 
-- [ ] **Step 4**: Perform eigendecomposition of covariance matrix
-- [ ] Extract eigenvalues and eigenvectors using NumPy
-- [ ] Display eigenvalues and eigenvector shapes
+- [x] **Step 4**: Perform eigendecomposition of covariance matrix
+- [x] Extract eigenvalues and eigenvectors using NumPy
+- [x] Display eigenvalues and eigenvector shapes
 - **Expected Output**: Eigenvalues and eigenvectors for principal component analysis
 
 ### 🚧 Steps 5 & 6: Component Sorting & Data Projection (Assigned)
 
 **Lead**: Charlotte Kariza
 
-- [ ] **Step 5**: Sort eigenvectors by eigenvalues (descending order)
-- [ ] Calculate explained variance ratios
-- [ ] Select optimal number of principal components
-- [ ] **Step 6**: Project original standardized data onto selected principal components
+- [x] **Step 5**: Sort eigenvectors by eigenvalues (descending order)
+- [x] Calculate explained variance ratios
+- [x] Select optimal number of principal components
+- [x] **Step 6**: Project original standardized data onto selected principal components
 - **Expected Output**: Transformed data in reduced dimensionality
 
 ### 🚧 Steps 7 & 8: Results & Visualization (Assigned)
