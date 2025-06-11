@@ -51,10 +51,10 @@ A collaborative Principal Component Analysis (PCA) implementation to analyze mal
 
 **Lead**: Limpho Semakale
 
-- [ ] **Step 7**: Display and analyze the reduced dataset
-- [ ] Output final PCA-transformed data
-- [ ] **Step 8**: Create before/after PCA visualizations
-- [ ] Compare original vs. transformed data dimensions
+- [x] **Step 7**: Display and analyze the reduced dataset
+- [x] Output final PCA-transformed data
+- [x] **Step 8**: Create before/after PCA visualizations
+- [x] Compare original vs. transformed data dimensions
 - **Expected Output**: Visual comparison and final analysis
 
 ## 🛠️ Setup Instructions
