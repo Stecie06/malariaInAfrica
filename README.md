@@ -138,3 +138,96 @@ Each team member should:
 ---
 
 **Note**: This is Peer Pair 16's collaborative implementation of PCA for the Advanced Linear Algebra formative assignment.
+
+## 📦 Part 3: Python Library - `alumath_matrix`
+
+Our team has successfully developed and published a Python library for matrix multiplication operations to PyPI.
+
+**Group Name**: "matrix" (as in alumath\_**matrix**)  
+**Library Name**: `alumath_matrix` (following required pattern: alumath[nameofgroup])
+
+### 🚀 Installation Instructions for Coach
+
+```bash
+# Install our published library from PyPI
+pip install alumath_matrix
+```
+
+### 🧪 Usage Examples - Different Matrix Dimensions
+
+```python
+from alumath_matrix.matrix_ops import Matrix
+
+# Test 1: 2x2 matrices
+A = Matrix([[1, 2], [3, 4]])
+B = Matrix([[5, 6], [7, 8]])
+result1 = A @ B
+print("2x2 × 2x2:", result1.data)  # [[19, 22], [43, 50]]
+
+# Test 2: 2x3 × 3x2 matrices
+C = Matrix([[1, 2, 3], [4, 5, 6]])     # 2x3
+D = Matrix([[7, 8], [9, 10], [11, 12]]) # 3x2
+result2 = C @ D
+print("2x3 × 3x2:", result2.data)  # [[58, 64], [139, 154]]
+
+# Test 3: 3x3 × 3x1 matrices
+E = Matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])  # 3x3
+F = Matrix([[1], [2], [3]])                      # 3x1
+result3 = E @ F
+print("3x3 × 3x1:", result3.data)  # [[14], [32], [50]]
+
+# Test 4: 1x4 × 4x2 matrices
+G = Matrix([[1, 2, 3, 4]])                       # 1x4
+H = Matrix([[1, 2], [3, 4], [5, 6], [7, 8]])    # 4x2
+result4 = G @ H
+print("1x4 × 4x2:", result4.data)  # [[50, 60]]
+
+# Test 5: 4x3 × 3x4 matrices
+I = Matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])  # 4x3
+J = Matrix([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])    # 3x4
+result5 = I @ J
+print("4x3 × 3x4:", result5.data)
+# Output: [[38, 44, 50, 56], [83, 98, 113, 128], [128, 152, 176, 200], [173, 206, 239, 272]]
+```
+
+### ✅ Library Features
+
+- **✅ Published to PyPI**: Available worldwide via `pip install alumath_matrix`
+- **✅ Matrix Multiplication**: Handles any compatible dimensions (m×n) × (n×p) → (m×p)
+- **✅ Dimension Validation**: Automatic checking with clear error messages
+- **✅ Clean API**: Uses Python's `@` operator for intuitive matrix multiplication
+- **✅ Professional Packaging**: Proper PyPI metadata and documentation
+
+### 🧪 Quick Verification Test for Coach
+
+```python
+# Quick test to verify installation works
+from alumath_matrix.matrix_ops import Matrix
+
+# Test case
+A = Matrix([[1, 2], [3, 4]])
+B = Matrix([[5, 6], [7, 8]])
+result = A @ B
+
+expected = [[19, 22], [43, 50]]
+print("✅ Test passed!" if result.data == expected else "❌ Test failed!")
+```
+
+### 🌐 PyPI Package Information
+
+- **Package Name**: `alumath_matrix`
+- **Version**: 0.1.0
+- **PyPI Page**: https://pypi.org/project/alumath-matrix/
+- **Installation**: `pip install alumath_matrix`
+- **Author**: Stecie Niyonzima
+- **License**: MIT License
+
+**Developed by Peer Group "matrix":**
+
+- **Mitali Bela** - Data preprocessing and PCA implementation
+- **Stecie Niyonzima** - Eigendecomposition and library development
+- **Charlotte Kariza** - Principal component analysis
+- **Elizabeth** - Visualization and results analysis
+
+**GitHub Repository**: https://github.com/Stecie06/malariaInAfrica  
+**Course**: Mathematics for Machine Learning - African Leadership University
